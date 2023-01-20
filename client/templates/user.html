@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <p style = "font-size: 35px; font-weight: bold; text-align: center;"> Users </p>
+
+    <p style = "font-size: 18px;"> <b> Id </b>: {{ user.id }} </p>
+    <p style = "font-size: 18px;"> <b> Nome </b>: {{ user.name }} </p>
+    <p style = "font-size: 18px;"> <b> Nome de usuário </b>: {{ user.username }} </p>
+    <p style = "font-size: 18px;"> <b> Email </b>: {{ user.email }} </p>
+    <p style = "font-size: 18px;"> <b> Telefone </b>: {{ user.phone }} </p>
+    <p style = "font-size: 18px;"> <b> Website </b>: {{ user.website }} </p> <br>
+
+    <br><br><br>
+
+    <a href = "{{url_for('index')}}" style = "color: white; font-size: 20px;"> Voltar </a>
+
+{% endblock %}

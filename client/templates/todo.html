@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <p style = "font-size: 35px; font-weight: bold; text-align: center;"> Todos </p>
+
+    <p style = "font-size: 18px;"> <b> Titulo </b>: {{ todo.title }} </p>
+    <p style = "font-size: 18px;"> <b> Completado </b>: {{ todo.completed }} </p>
+    <p style = "font-size: 18px;"> <b> Id </b>: {{ todo.id }} </p>
+    <p style = "font-size: 18px;"> <b> Id de usuário </b>: {{ todo.userId }} </p>
+
+    <br><br><br>
+
+    <a href = "{{url_for('get_todos')}}" style = "color: white; font-size: 20px;"> Voltar </a>
+
+{% endblock %}
